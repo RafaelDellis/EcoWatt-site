@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #dfe6b3;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.bloco {
+    background: #eee;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* layout */
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* texto */
+.texto {
+    width: 65%;
+    line-height: 1.6;
+}
+
+/* imagem */
+.imagem {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 15px;
+}

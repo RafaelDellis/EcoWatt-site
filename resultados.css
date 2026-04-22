@@ -1,0 +1,49 @@
+body {
+
+    font-family: Arial;
+    background: #dfe6b3;
+    margin: 0;
+    padding-top: 60px; 
+    
+}
+
+h1 {
+    text-align: center;
+   
+    
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.bloco {
+    background: #eee;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* layout */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* texto */
+.texto {
+    width: 50%;
+    line-height: 1.6;
+}
+
+/* gráfico */
+.grafico {
+    width: 40%;
+}
+
+canvas {
+    max-width: 250px;
+}
+
+

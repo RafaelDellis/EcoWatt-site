@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+/* (ESTILO DO BODY)
+}
+
+Responsável por centralizar todo o conteúdo da página e definir o fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.979);
+}
+
+/* (CONTAINER DO FORMULÁRIO)
+Define o estilo da caixa principal onde fica o formulário */
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgb(2, 70, 2);
+    border-radius: 10px;
+    color: rgb(47, 214, 41);
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgb(2, 168, 38);
+}
+
+/* (TÍTULO DO FORMULÁRIO)
+Estiliza o título dentro do container */
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* (CAIXA DOS CAMPOS)
+Estrutura que organiza cada campo de entrada do formulário */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* (ESTILO DOS INPUTS)
+Define aparência dos campos de digitação */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(241, 255, 190);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #3bdf49;
+    padding: 20px 45px 20px 20px;
+}
+
+/* (PLACEHOLDER DOS INPUTS)
+Define a aparência do texto de exemplo dentro dos campos */
+.input-box input::placeholder {
+    color: #44A537;
+}
+
+/* (ÍCONE DO INPUT)
+Responsável por posicionar e estilizar o ícone dentro do campo */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #d7f3a3;
+    font-weight: 600;
+}
+
+
+/* (BOTÃO DE ENVIO)
+Estiliza o botão de login/enviar */
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #44A537;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #02360e;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* (INPUT INVÁLIDO)
+Define estilo quando o campo não foi preenchido corretamente */
+input:invalid {
+    border-color: rgb(86, 192, 24);
+}
+
+/* (INPUT VÁLIDO)
+Define estilo quando o campo foi preenchido corretamente */
+input:valid {
+    border-color: rgb(195, 255, 190);
+}
+}

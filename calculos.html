@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cálculos</title>
+
+<link rel="stylesheet" href="calculo.css">
+<link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<h1>Cálculos</h1>
+
+<div class="container">
+    <div class="bloco">
+
+        <h2>Consumo e Emissão</h2>
+
+        <div class="form">
+
+            <label>Potência do aparelho (W):</label>
+            <input type="number" id="potencia" placeholder="Ex: 300">
+
+            <label>Horas de uso por dia:</label>
+            <input type="number" id="horas" placeholder="Ex: 5">
+
+            <label>Horas de uso de IA por dia:</label>
+            <input type="number" id="ia" placeholder="Ex: 2">
+
+            <label>Dias de uso no mês:</label>
+            <input type="number" id="dias" placeholder="Ex: 30">
+
+            <label>Valor do kWh (R$):</label>
+            <input type="number" id="valor" placeholder="Ex: 0.80">
+
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+
+    </div>
+</div>
+
+<script src="navbar.js"></script>
+<script src="calculos.js"></script>
+
+</body>
+</html>

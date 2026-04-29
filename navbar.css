@@ -8,7 +8,7 @@
     min-height: 60px;
     max-height: 60px;
 
-    background: #1a1a1a;
+    background: #335441;
 
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
 }
 
 .nav-links a {
-    color: #3bdf49;
+    color: #ccdba4;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -50,14 +50,14 @@
 .user-icon {
     font-size: 18px;
     text-decoration: none;
-    color: #3bdf49;
-    background: #2a2a2a;
+    color: #467048;
+    background:  #ccdba4;
     padding: 6px 10px; /* menor pra caber na altura */
     border-radius: 50%;
     transition: 0.3s;
 }
 
 .user-icon:hover {
-    background: #3bdf49;
-    color: black;
+    background: #467048;
+    color: #467048;
 }

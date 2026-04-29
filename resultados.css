@@ -1,7 +1,7 @@
 body {
 
     font-family: Arial;
-    background: #dfe6b3;
+    background: #fff7e5;
     margin: 0;
     padding-top: 60px; 
     
@@ -19,7 +19,7 @@ h1 {
 }
 
 .bloco {
-    background: #eee;
+    background: #ccdba4;
     border-radius: 20px;
     padding: 30px;
 }

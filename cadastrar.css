@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.979);
+    background-color: #fff7e5;
 }
 
 /* (CONTAINER DO FORMULÁRIO)
@@ -24,11 +24,11 @@ Define o estilo da caixa principal onde fica o formulário */
 .container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid rgb(2, 70, 2);
-    border-radius: 10px;
-    color: rgb(47, 214, 41);
+    border: 2px solid #7cad74;
+    border-radius: 30px;
+    color:#467048;
     padding: 30px 40px;
-    box-shadow: 0 0 10px rgb(2, 168, 38);
+    box-shadow: #c69732;
 }
 
 /* (TÍTULO DO FORMULÁRIO)
@@ -57,14 +57,14 @@ Define aparência dos campos de digitação */
     border-radius: 40px;
     outline: none;
     font-size: 16px;
-    color: #3bdf49;
+    color: #c69732;
     padding: 20px 45px 20px 20px;
 }
 
 /* (PLACEHOLDER DOS INPUTS)
 Define a aparência do texto de exemplo dentro dos campos */
 .input-box input::placeholder {
-    color: #44A537;
+    color: #335441;
 }
 
 /* (ÍCONE DO INPUT)
@@ -85,7 +85,7 @@ Estiliza o botão de login/enviar */
 .login {
     width: 100%;
     height: 50px;
-    background-color: #44A537;
+    background-color:#ccdba4;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -98,7 +98,7 @@ Estiliza o botão de login/enviar */
 /* (INPUT INVÁLIDO)
 Define estilo quando o campo não foi preenchido corretamente */
 input:invalid {
-    border-color: rgb(86, 192, 24);
+    border-color: #ccdba4;
 }
 
 /* (INPUT VÁLIDO)

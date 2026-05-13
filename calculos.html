@@ -17,29 +17,60 @@
 <div class="container">
     <div class="bloco">
 
-        <h2>Consumo e Emissão</h2>
+        <div class="info">
+            <h2>Consumo e Emissão</h2>
+
+            <p>
+                Calcule o consumo de energia,
+                custo mensal e emissão de CO₂
+                do uso dos seus aparelhos e IA.
+            </p>
+
+            <div class="planeta">
+                <div class="terra"></div>
+                <div class="folha folha1"></div>
+                <div class="folha folha2"></div>
+            </div>
+            
+        </div>
+        
 
         <div class="form">
 
-            <label>Potência do aparelho (W):</label>
-            <input type="number" id="potencia" placeholder="Ex: 300">
+            <div class="campo">
+                <label>Potência (W)</label>
+                <input type="number" id="potencia" placeholder="300">
+            </div>
 
-            <label>Horas de uso por dia:</label>
-            <input type="number" id="horas" placeholder="Ex: 5">
+            <div class="campo">
+                <label>Horas por dia</label>
+                <input type="number" id="horas" placeholder="5">
+            </div>
 
-            <label>Horas de uso de IA por dia:</label>
-            <input type="number" id="ia" placeholder="Ex: 2">
+            <div class="campo">
+                <label>Uso de IA (h)</label>
+                <input type="number" id="ia" placeholder="2">
+            </div>
 
-            <label>Dias de uso no mês:</label>
-            <input type="number" id="dias" placeholder="Ex: 30">
+            <div class="campo">
+                <label>Dias no mês</label>
+                <input type="number" id="dias" placeholder="30">
+            </div>
 
-            <label>Valor do kWh (R$):</label>
-            <input type="number" id="valor" placeholder="Ex: 0.80">
+            <div class="campo full">
+                <label>Valor do kWh (R$)</label>
+                <input type="number" id="valor" placeholder="0.80">
+            </div>
 
-            <button onclick="calcular()">Calcular</button>
+            <div class="campo full">
+                <button onclick="calcular()">
+                    Calcular Consumo
+                </button>
+            </div>
+
+            <div id="resultado" class="resultado"></div>
+
         </div>
-
-        <div id="resultado" class="resultado"></div>
 
     </div>
 </div>

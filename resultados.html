@@ -26,22 +26,22 @@
 
                 <p>
                     ⚡ <strong>Consumo Total</strong><br>
-                    ___ kWh
+                    <span id="consumo-total">—</span>
                 </p>
 
                 <p>
                     💰 <strong>Custo Estimado</strong><br>
-                    R$ ___
+                    <span id="custo-estimado">—</span>
                 </p>
 
                 <p>
                     🌱 <strong>Emissão de CO₂</strong><br>
-                    ___ kg
+                    <span id="emissao-co2">—</span>
                 </p>
 
                 <p>
                     🌳 <strong>Compensação</strong><br>
-                    ___ árvores
+                    <span id="compensacao">—</span>
                 </p>
 
             </div>
@@ -56,6 +56,8 @@
 </div>
 
 <script src="navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="grafico.js"></script>
 

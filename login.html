@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
+    <title>Login - EcoWatt</title>
     <link rel="stylesheet" href="cadastrar.css">
     <link rel="stylesheet" href="navbar.css">
-      
 </head>
 <body>
 
     <div id="navbar"></div>
     
     <main class="container">
-        <form  method="post">
-            <h1>Cadastro EcoWatt</h1>
+        <form id="loginForm" method="post">
+            <h1>Entrar</h1>
 
             <div class="input-box">
-                <input placeholder="Nome" type="text" name="txtNome" required>
+                <input placeholder="Email" id="email" type="email" required>
             </div>
 
             <div class="input-box">
-                <input placeholder="Email" name="txtLogin" type="email" required>
+                <input placeholder="Senha" id="senha" type="password" required>
             </div>
 
-            <div class="input-box">
-                <input placeholder="Senha" name="txtSenha" type="password" required>
-            </div>
+            <input type="submit" class="login" value="Entrar"/>
 
-            <input type="submit" class="login" name="b1" value="Cadastrar"/>
+            <p style="text-align:center;margin-top:12px;color:#55705d">Não tem conta? <a href="cadastrar.html">Cadastre-se</a></p>
         </form>
     </main>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase.js"></script>
     <script src="navbar.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

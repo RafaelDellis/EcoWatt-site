@@ -36,32 +36,41 @@
         
 
         <div class="form">
+            <fieldset class="grupo-categoria">
+                <legend>Consumo do aparelho</legend>
 
-            <div class="campo">
-                <label>Potência (W)</label>
-                <input type="number" id="potencia" placeholder="300">
-            </div>
+                <div class="campo">
+                    <label>Dispositivo</label>
+                    <input type="text" id="dispositivo" placeholder="Geladeira">
+                </div>
 
-            <div class="campo">
-                <label>Horas por dia</label>
-                <input type="number" id="horas" placeholder="5">
-            </div>
+                <div class="campo">
+                    <label>Potência (W)</label>
+                    <input type="number" id="potencia" placeholder="300">
+                </div>
 
-            <div class="campo">
-                <label>Uso de IA (h)</label>
-                <input type="number" id="ia" placeholder="2">
-            </div>
-
-            <div class="campo">
-                <label>Dias no mês</label>
-                <input type="number" id="dias" placeholder="30">
-            </div>
-
-            <div class="campo full">
-                <label>Valor do kWh (R$)</label>
-                <input type="number" id="valor" placeholder="0.80">
-            </div>
-
+                <div class="campo">
+                    <label>Horas por dia</label>
+                    <input type="number" id="horas" placeholder="5">
+                </div>
+                <div class="campo">
+                    <label>Dias no mês</label>
+                    <input type="number" id="dias" placeholder="30">
+                </div>
+            </fieldset>
+            <fieldset class="grupo-categoria">
+                <legend>Consumo de IA</legend>
+                <div class="campo">
+                    <label>Uso de IA (h)</label>
+                    <input type="number" id="ia" placeholder="2">
+                </div>
+    
+                <div class="campo">
+                    <label>Valor do kWh (R$)</label>
+                    <input type="number" id="valor" placeholder="0.80">
+                </div>
+            </fieldset>
+            
             <div class="campo full">
                 <button onclick="calcular()">
                     Calcular Consumo
@@ -75,6 +84,8 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
 <script src="navbar.js"></script>
 <script src="calculos.js"></script>
 

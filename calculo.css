@@ -102,6 +102,30 @@ h1{
     gap: 16px 20px;
 }
 
+.grupo-categoria{
+    grid-column: span 2;
+
+    border: 2px solid #d4e8cf;
+
+    border-radius: 22px;
+
+    padding: 18px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+
+    background: rgba(238, 246, 234, 0.55);
+}
+
+.grupo-categoria legend{
+    padding: 0 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #23402c;
+}
+
 .campo{
     display: flex;
     flex-direction: column;
@@ -206,6 +230,11 @@ button:hover{
     }
 
     .form{
+        grid-template-columns: 1fr;
+    }
+
+    .grupo-categoria{
+        grid-column: span 1;
         grid-template-columns: 1fr;
     }
 

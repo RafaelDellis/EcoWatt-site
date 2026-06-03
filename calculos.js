@@ -1,5 +1,6 @@
-function calcular() {
+async function calcular() {
 
+    let dispositivo = document.getElementById("dispositivo").value.trim();
     let potencia = document.getElementById("potencia").value;
     let horas = document.getElementById("horas").value;
     let dias = document.getElementById("dias").value;
@@ -7,7 +8,7 @@ function calcular() {
 
     let horasIA = document.getElementById("ia").value;
 
-    if(potencia === "" || horas === "" || dias === "" || valor === "" || horasIA === ""){
+    if(dispositivo === "" || potencia === "" || horas === "" || dias === "" || valor === "" || horasIA === ""){
         alert("Preencha todos os campos!");
         return;
     }
@@ -35,4 +36,21 @@ function calcular() {
         <p>🌱 Emissão de CO₂: <b>${co2.toFixed(2)} kg</b></p>
         <p>🌳 Árvores necessárias para compensar: <b>${arvores.toFixed(2)}</b></p>
     `;
+
+    const usuario = getUsuario();
+    if (usuario) {
+        try {
+            await salvarCalculo(
+                dispositivo,
+                Number(potencia),
+                Number(horas),
+                Number(horasIA),
+                Number(dias),
+                Number(valor),
+                usuario.id
+            );
+        } catch (err) {
+            console.error("Erro ao salvar no Supabase:", err.message);
+        }
+    }
 }

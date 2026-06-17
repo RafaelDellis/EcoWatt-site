@@ -35,9 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="nav-user">
-                <a href="cadastrar.html" class="user-icon">👤</a>
+                ${localStorage.getItem("usuarioLogado") 
+                    ? `
+                        <span style="margin-right:10px;">
+                            Olá, ${localStorage.getItem("usuarioLogado")}
+                        </span>
+                        <button onclick="logout()" style="cursor:pointer;">
+                             Sair
+                        </button>
+                     `
+                    : `<a href="login.html" class="user-icon">👤</a>`
+                }
             </div>
 
         </div>
     `;
 });
+
+function logout() {
+    localStorage.removeItem("usuarioLogado");
+    window.location.href = "login.html";
+}

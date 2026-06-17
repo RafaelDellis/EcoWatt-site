@@ -21,7 +21,7 @@ body{
     color: #1f4127;
 }
 
-/* TÍTULO */
+
 
 h1{
     text-align: center;
@@ -33,7 +33,7 @@ h1{
     margin-bottom: 10px;
 }
 
-/* SUBTÍTULO */
+
 
 .subtitulo{
     text-align: center;
@@ -45,7 +45,7 @@ h1{
     margin-bottom: 40px;
 }
 
-/* CONTAINER */
+
 
 .container{
     width: 100%;
@@ -56,7 +56,7 @@ h1{
     padding: 0 20px 50px;
 }
 
-/* GRID */
+
 
 .dicas-grid{
     width: 100%;
@@ -69,7 +69,7 @@ h1{
     gap: 28px;
 }
 
-/* CARD */
+
 
 .dica{
     background: rgba(255,255,255,0.55);
@@ -98,7 +98,7 @@ h1{
     position: relative;
 }
 
-/* BRILHO */
+
 
 .dica::before{
     content: '';
@@ -116,7 +116,7 @@ h1{
     right: -80px;
 }
 
-/* HOVER */
+
 
 .dica:hover{
     transform: translateY(-5px);
@@ -125,7 +125,7 @@ h1{
     0 18px 30px rgba(0,0,0,0.08);
 }
 
-/* TEXTO */
+
 
 .texto{
     position: relative;
@@ -169,7 +169,7 @@ h1{
     font-size: 15px;
 }
 
-/* IMAGENS */
+
 
 .dica img{
     width: 150px;
@@ -189,13 +189,12 @@ h1{
     transition: 0.35s;
 }
 
-/* EFEITO IMAGEM */
 
 .dica:hover img{
      transform: scale(1.05);
 }
 
-/* RESPONSIVO */
+
 
 @media(max-width: 950px){
 
@@ -221,5 +220,120 @@ h1{
         width: 100%;
         max-width: 220px;
         height: 220px;
+    }
+}
+
+.dica-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.dica-link:hover .dica{
+    transform: translateY(-5px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.empresas{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.empresas h2{
+    text-align: center;
+    font-size: 40px;
+    color: #173822;
+    margin-bottom: 15px;
+}
+
+.subtitulo-empresa{
+    text-align: center;
+    color: #4b6653;
+    margin-bottom: 40px;
+}
+
+.empresa-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.empresa{
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: .3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.empresa:hover{
+    transform: translateY(-5px);
+}
+
+.empresa img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.empresa h3{
+    margin-bottom: 10px;
+}
+
+.empresa ul{
+    padding-left: 20px;
+    color: #486251;
+}
+
+.positiva{
+    border-left: 6px solid #2d6a4f;
+}
+
+.negativa{
+    border-left: 6px solid #c0392b;
+}
+
+button{
+    margin-top: 5px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(145deg,#1b4332,#2d6a4f);
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+@media(max-width:950px){
+
+    .empresa-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .empresa{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .empresa ul{
+        text-align: left;
     }
 }

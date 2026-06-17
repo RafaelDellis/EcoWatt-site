@@ -19,7 +19,7 @@ body{
     padding-top: 120px;
 }
 
-/* TÍTULO */
+
 
 h1{
     text-align: center;
@@ -31,7 +31,7 @@ h1{
     color: #1f4127;
 }
 
-/* CONTAINER */
+
 
 .container{
     width: 100%;
@@ -40,7 +40,7 @@ h1{
     padding: 0 20px;
 }
 
-/* CARD PRINCIPAL */
+
 
 .bloco{
     width: 100%;
@@ -63,7 +63,6 @@ h1{
     0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* LADO VERDE */
 
 .info{
     background:
@@ -90,7 +89,7 @@ h1{
     line-height: 1.6;
 }
 
-/* FORMULÁRIO */
+
 
 .form{
     padding: 30px 35px;
@@ -166,7 +165,7 @@ input:focus{
     box-shadow: 0 0 0 4px rgba(64,145,108,0.15);
 }
 
-/* BOTÃO */
+
 
 button{
     margin-top: 5px;

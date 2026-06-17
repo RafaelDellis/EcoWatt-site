@@ -21,7 +21,7 @@ body{
     color: #1f4127;
 }
 
-/* TÍTULO */
+
 
 h1{
     text-align: center;
@@ -33,7 +33,7 @@ h1{
     color: #173822;
 }
 
-/* CONTAINER */
+
 
 .container{
     width: 100%;
@@ -44,7 +44,7 @@ h1{
     padding: 0 20px 50px;
 }
 
-/* CARD */
+
 
 .bloco{
     width: 100%;
@@ -66,7 +66,7 @@ h1{
     padding: 40px;
 }
 
-/* SUBTÍTULO */
+
 
 .bloco h2{
     font-size: 34px;
@@ -94,7 +94,7 @@ h1{
     linear-gradient(to right,#2d6a4f,#74c69d);
 }
 
-/* CONTEÚDO */
+
 
 .conteudo{
     display: grid;
@@ -106,7 +106,7 @@ h1{
     align-items: center;
 }
 
-/* ÁREA DOS DADOS */
+
 
 .texto{
     display: grid;
@@ -116,7 +116,7 @@ h1{
     gap: 20px;
 }
 
-/* CARDS */
+
 
 .texto p{
     background: #f5f8ef;
@@ -146,7 +146,7 @@ h1{
     0 12px 20px rgba(0,0,0,0.06);
 }
 
-/* GRÁFICO */
+
 
 .grafico{
     background:
@@ -167,7 +167,6 @@ h1{
     justify-content: center;
 }
 
-/* DETALHE */
 
 .grafico::before{
     content: '';
@@ -185,7 +184,7 @@ h1{
     right: -120px;
 }
 
-/* CANVAS */
+
 
 canvas{
     position: relative;
@@ -196,7 +195,29 @@ canvas{
     max-height: 260px;
 }
 
-/* RESPONSIVO */
+button{
+    margin-top: 5px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(145deg,#1b4332,#2d6a4f);
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
 
 @media(max-width: 950px){
 

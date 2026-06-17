@@ -25,11 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            setUsuario(usuario);
+            localStorage.setItem("usuarioLogado", usuario.nome);
             window.location.href = 'calculos.html';
         } catch (err) {
             console.error(err);
             alert(err.message || 'Erro ao fazer login');
         }
+        
     });
 });
+
+
